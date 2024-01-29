@@ -1,0 +1,43 @@
+###
+### A complete description of a Prefect Deployment for flow 'rightmove-scraping-flow'
+###
+name: RightMove Scraping
+description: null
+version: e9e7c1d34f7a1c74f41040c711d64fb9
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags:
+- rmq
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: rightmove-scraping-flow
+manifest_path: null
+storage: null
+path: /home/james/workshop
+entrypoint: rmtest.py:rightmove_scraping_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2024-01-29T14:32:36.049213+00:00'
+triggers: []
+enforce_parameter_schema: null

@@ -1,0 +1,7 @@
+prefect
+beautifulsoup4
+httpx
+webdriver_manager
+jupyter
+selenium
+psycopg2-binary
